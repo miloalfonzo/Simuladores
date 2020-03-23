@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    margin-bottom: 30px;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+
+.img{ 
+    height: 200px;
+    width: 50%;
+    cursor: auto;
+}
+
+#pj{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn1{
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+    background: gray;
+    border: none;
+    font-weight: bold;
+}
+
+img{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#lamponne, #santoss, #ravenna, #medina{
+    visibility: hidden;
+}
+
+
+.btn{
+    background: white;
+    border: none;
+    color:black;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}

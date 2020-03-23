@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <script src="game.js"> </script>
+        <title>SimuSimulador</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img class="img" src="img/simu.png">
+        </header>
+
+        <h2 id="title"> Elegí a tu simulador </h2>
+        
+        <div id="pj">
+            <div class="lamponne">
+                <img src="/img/lampo.jpg" width="200px" height="300px">
+                <br>
+                <span>Pablo Lamponne</span>
+                <br>
+                <button onclick="goToGame1()" id="lampo" class="btn1">Elegir</button>
+            </div>
+            <div class="santos">
+                <img src="/img/santos.png" width="200px" height="300px">
+                <br>
+                <span>Mario Santos</span>
+                <br>
+                <button onclick="goToGame2()" id="santos" class="btn1">Elegir</button>
+                </div>
+            <div class="ravenna">
+                <img src="/img/ravenna.jpg" width="200px" height="300px">
+                <br>
+                <span>Emilio Ravenna</span>
+                <br>
+                <button onclick="goToGame3()" id="rave" class="btn1">Elegir</button>               
+            </div>
+            <div class="medina">
+                <img src="/img/medina.jpg" width="200px" height="300px">
+                <br>
+                <span>Gabriel Medina</span>
+                <br>
+                <button onclick="goToGame4()" id="medi" class="btn1">Elegir</button>          
+            </div>
+        </div>
+
+        <div id="btns" class="btns"> 
+            <div id="lamponne">
+                <button class="btn" onclick="option(0);">Conseguir un Tigre</button>
+                <button class="btn" onclick="option(1);">Pedir colaboración de Betún</button>
+                <button class="btn" onclick="option(2);">Levantar la mano derecha...la derecha Lamponne</button>
+                <button class="btn" onclick="option(3);">Recordar traumas de la niñez</button>
+                <button class="btn" onclick="option(4);">Hacer el papel de cubano</button>
+            </div>
+            <div id="santoss">
+                <button class="btn" onclick="option(0);">Preguntar porque no lleva una escarapela</button>
+                <button class="btn" onclick="option(1);">Pedir fuego</button>
+                <button class="btn" onclick="option(2);">Hablar en frances</button>
+                <button class="btn" onclick="option(3);">Tomar Earl Grey</button>
+                <button class="btn" onclick="option(4);">Monologo de la decadencia Argentina</button>  
+            </div>
+            <div id="ravenna">
+                <button class="btn" onclick="option(0);">Ser un militar estadounidense</button>
+                <button class="btn" onclick="option(1);">Ser un robot ruso</button>
+                <button class="btn" onclick="option(2);">Ser investigador de la NASA </button>
+                <button class="btn" onclick="option(3);">Ser del clan Motul</button>
+                <button class="btn" onclick="option(4);">Ser una amiga de Kiki</button>
+            </div>
+            <div id="medina">
+                <button class="btn" onclick="option(0);">Realizar una investigación</button>
+                <button class="btn" onclick="option(1);">Poner el cd del Rey Leon</button>
+                <button class="btn" onclick="option(2);">Dedicarle un poema a los animales</button>
+                <button class="btn" onclick="option(3);">Ir a la jugueteria del señor Simon</button>
+                <button class="btn" onclick="option(4);">Ir a las Toninas</button> 
+            </div>
+           </div> 
+        <p id="result"></p>
+    </body>
+</html>
