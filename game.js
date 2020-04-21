@@ -1,3 +1,8 @@
+function reload () {
+    location.reload();
+    return false;
+}
+
 // funciones goToGame realizan el cambio de pantalla según el personaje elegido, haciendo visible o no ciertos elementos.
 
 function goToGame1(){
@@ -68,12 +73,14 @@ function option(user){
 //La variable click comienza en cero y aumenta cada vez que se clickea para ejecutar la función, si se llega a tres muestra el resultado del juego
     if (click === 3){
         text.innerHTML = `
-                        <h3> ${textResult[result]} </h3>`;
+                        <h3> ${textResult[result]} </h3>
+                        <br/>
+                        <button class="btn" onclick=reload()> Volver a jugar </button>      
+                        `;
     } 
 
     if (click >= 4){
-        location.reload();
-        return false;
+       reload();
     }
 
 }
